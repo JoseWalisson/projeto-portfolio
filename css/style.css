@@ -38,9 +38,7 @@
 }
 
 #container img:hover {
-    width: 60px;
-    height: 60px;
-    border: 2px solid #f1eeee;
+    border: 2px solid #1ea004;
 }
 
 #container li {
@@ -68,6 +66,71 @@ ul .material-symbols-outlined {
     font-size: 3em;
     color: #c9c9c9;
     cursor: pointer;
+}
+
+#info-container {
+    margin: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#home h1 {
+    padding-bottom: .3em;
+    font-size: 4em;
+    color: #1d1de9;
+}
+
+#home h2 {
+    padding-bottom: .3em;
+    padding-left: 10px;
+    font-size: 3em;
+    color: #1ea004;
+}
+
+#home h3 {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1a9202;
+    font-size: 2em;
+    color: #e7f0e4;
+}
+
+#home img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+#home .img-1 {
+    width: 45px;
+    height: 45px;
+    margin-bottom: .7em;
+    margin-left: 7em;
+    border: 3px solid transparent;
+    transition: .3s;
+}
+
+#home .img-1:hover {
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+#home .img-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border: 5px solid transparent;
+    transition: .3s;
+}
+
+#home .img-2:hover {
+    border: 1px solid transparent;
+    transition: .3s;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
