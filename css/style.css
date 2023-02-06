@@ -31,7 +31,8 @@
     display: block;
     width: 60px;
     height: 60px;
-    margin-bottom: 1em;
+    margin-bottom: .5em;
+    margin-top: 1.5em;
     border-radius: 50%;
     cursor: pointer;
     transition: .5s;
@@ -189,7 +190,7 @@ ul .material-symbols-outlined {
 
     #container li a {
         margin-top: 1em;
-        width: 20vw;
+        width: 15vw;
     }
 
     ul .material-symbols-outlined {
@@ -230,7 +231,7 @@ ul .material-symbols-outlined {
 
     #container li a {
         margin-top: 1em;
-        width: 20vw;
+        width: 16vw;
     }
 
     ul .material-symbols-outlined {
