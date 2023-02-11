@@ -7,6 +7,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-de-destaque: #1d1de9;
+    --borda: #1ba500;
+    --cor-do-background: #157502;
+    --cor-da-lista: #e7e6e6;
+    --cor-do-icone: #c9c9c9;
+    --cor-padrao: #ffffff;
+    --cor-gradient: #1dcf1d6b;
+}
+
 #barra-de-cima {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../imagens/fundo.jpg');
     background-position: center center;
@@ -39,7 +49,7 @@
 }
 
 #container img:hover {
-    border: 2px solid #1ea004;
+    border: 2px solid var(--borda);
 }
 
 #container li {
@@ -48,10 +58,10 @@
 #container li a {
     text-align: center;
     display: block;
-    color: #e7e6e6;
+    color: var(--cor-da-lista);
     padding: 10px;
     text-decoration: none;
-    border: 1.5px solid #1ba500;
+    border: 1.5px solid var(--borda);
     border-radius: 20px;
     width: 30vh;
     cursor: pointer;
@@ -60,13 +70,13 @@
 
 #container li a:hover {
     border-radius: 20px;
-    background-color: #157502;
+    background-color: var(--cor-do-background);
 }
 
 ul .material-symbols-outlined {
     margin-bottom: 1em;
     font-size: 3em;
-    color: #c9c9c9;
+    color: var(--cor-do-icone);
     cursor: pointer;
 }
 
@@ -78,7 +88,7 @@ ul .material-symbols-outlined {
 
 #home {
     margin-top: 1em;
-    background: linear-gradient(to right, #ffffff 30%, #1dcf1d6b);
+    background: linear-gradient(to right, var(--cor-padrao) 30%, var(--cor-gradient));
     border-radius: 40px;
 }
 
@@ -86,7 +96,7 @@ ul .material-symbols-outlined {
     margin-top: .5em;
     padding-bottom: .3em;
     font-size: 4em;
-    color: #1d1de9;
+    color: var(--cor-de-destaque);
 }
 
 #home h2 {
@@ -98,7 +108,7 @@ ul .material-symbols-outlined {
 
 #home h3 {
     display: inline-block;
-    cursor: none;
+    cursor: pointer;
     padding: 10px;
     border-radius: 20px;
     background-color: #178002;
@@ -159,10 +169,11 @@ ul .material-symbols-outlined {
 }
 
 #sobre-mim {
+    margin-top: 3em;
     width: 79vh;
     padding-left: 20px;
     font-size: 2em;
-    color: #1ba500;
+    color: var(--borda);
 }
 
 #sobre-mim h2 {
@@ -172,13 +183,13 @@ ul .material-symbols-outlined {
     margin-top: 1em;
     font-size: 1.5em;
     font-weight: 600;
-    color: #1ba500;
+    color: var(--borda);
 }
 
 #sobre-mim p {
     padding-top: .5em;
     font-size: .8em;
-    color: #1ba500;
+    color: var(--borda);
     margin-bottom: 1em;
     line-height: 1.5em;
 }
@@ -192,6 +203,30 @@ ul .material-symbols-outlined {
 #sobre-mim a {
     text-decoration: none;
     font-size: .4em;
+}
+
+#sobre-mim a:hover {
+    text-decoration: underline;
+    color: var(--cor-de-destaque);
+}
+
+#habilidades {
+    margin-top: 3em;
+    width: 76vh;
+    margin-left: 20px;
+    margin-bottom: 3em;
+}
+
+#habilidades h2 {
+    font-size: 2.5em;
+    padding-bottom: .3em;
+    color: var(--cor-de-destaque);
+}
+
+#habilidades p {
+    font-size: 1.5em;
+    color: #1d1df1;
+    line-height: 1.5em;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -212,10 +247,10 @@ ul .material-symbols-outlined {
     }
 
     #sobre-mim {
-        margin-top: 3em;
+        margin-top: 4.5em;
         width: 79vh;
         font-size: 2em;
-        color: #1ba500;
+        color: var(--borda);
     }
     
     #sobre-mim h2 {
@@ -230,7 +265,6 @@ ul .material-symbols-outlined {
     width: 90vh;
     font-size: .9em;
     margin-left: 4.3em;
-    line-height: 1.5em;
     }
 
     #sobre-mim img {
@@ -244,6 +278,30 @@ ul .material-symbols-outlined {
     #sobre-mim a {
     margin-left: 10em;
     font-size: .4em;
+    }
+
+    #sobre-mim a:hover {
+    text-decoration: underline;
+    color: var(--cor-de-destaque);
+    }
+
+    #habilidades {
+        margin-top: 4.5em;
+        width: 90vh;
+        margin-left: 20px;
+        margin-bottom: 4.5em;
+    }
+    
+    #habilidades h2 {
+        width: 90vw;
+        font-size: 2.8em;
+        padding-left: 2.7em;
+    }
+    
+    #habilidades p {
+        width: 80vw;
+        padding-left: 4.6em;
+        font-size: 1.7em;
     }
 }
 
@@ -282,6 +340,64 @@ ul .material-symbols-outlined {
 
     #home h2 {
         margin-bottom: -1.5em;
+    }
+
+    #sobre-mim {
+        margin-top: 4.5em;
+        width: 90vh;
+        font-size: 2em;
+        color: var(--borda-da-img);
+    }
+    
+    #sobre-mim h2 {
+    display: block;
+    width: 90vh;
+    text-align: center;
+    margin-left: 3em;
+    margin-bottom: -3.3em;
+    }
+
+    #sobre-mim p {
+    width: 70vw;
+    font-size: .9em;
+    margin-left: 4.3em;
+    }
+
+    #sobre-mim img {
+    display: block;
+    margin-top: 2em;
+    margin-left: 4em;
+    width: 120px;
+    height: 120px;
+    }
+
+    #sobre-mim a {
+    margin-left: 10em;
+    font-size: .4em;
+    }
+
+    #sobre-mim a:hover {
+    text-decoration: underline;
+    color: var(--cor-de-destaque);
+    }
+    
+    #habilidades {
+        margin-top: 4.5em;
+        width: 90vh;
+        margin-left: 20px;
+        margin-bottom: 4.5em;
+    }
+    
+    #habilidades h2 {
+        width: 90vw;
+        font-size: 2.8em;
+        padding-left: 2.7em;
+    }
+    
+    #habilidades p {
+        width: 80vw;
+        padding-left: 4.5em;
+        font-size: 1.7em;
     }
 
 }
@@ -331,6 +447,66 @@ ul .material-symbols-outlined {
 
     #home h2 {
         margin-bottom: -1.5em;
+    }
+
+    
+    #sobre-mim {
+        margin-top: 4.5em;
+        width: 90vh;
+        font-size: 2em;
+        color: var(--borda);
+    }
+    
+    #sobre-mim h2 {
+    display: block;
+    width: 90vh;
+    text-align: center;
+    margin-left: 3em;
+    margin-bottom: -3.3em;
+    }
+
+    #sobre-mim p {
+    width: 70vw;
+    font-size: .9em;
+    margin-left: 4.3em;
+    }
+
+    #sobre-mim img {
+    display: block;
+    margin-top: 2em;
+    margin-left: 4em;
+    width: 120px;
+    height: 120px;
+    }
+
+    #sobre-mim a {
+    margin-left: 10em;
+    font-size: .4em;
+    }
+
+    #sobre-mim a:hover {
+    text-decoration: underline;
+    color: var(--cor-de-destaque);
+    }
+
+    
+    #habilidades {
+        margin-top: 4.5em;
+        width: 90vh;
+        margin-left: 20px;
+        margin-bottom: 1.5em;
+    }
+    
+    #habilidades h2 {
+        width: 90vw;
+        font-size: 2.8em;
+        padding-left: 2.7em;
+    }
+    
+    #habilidades p {
+        width: 80vw;
+        padding-left: 3.8em;
+        font-size: 2em;
     }
 
 }
