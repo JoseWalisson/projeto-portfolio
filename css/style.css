@@ -17,6 +17,11 @@
         --cor-gradient: #1dcf1d6b;
     }
     
+    #container-da-pagina {
+        width: 100vw;
+        height: 100vh;
+    }
+
     #barra-de-cima {
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../imagens/fundo.jpg');
         background-position: center center;
@@ -214,7 +219,6 @@
     
     #habilidades {
         margin-top: 3em;
-        width: 76vh;
         margin-left: 20px;
         margin-bottom: 3em;
     }
@@ -226,6 +230,7 @@
     }
     
     #habilidades p {
+        width: 90vw;
         font-size: 1.5em;
         color: #1d1df1;
         line-height: 1.5em;
