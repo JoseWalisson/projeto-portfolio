@@ -19,10 +19,11 @@
     
     #container-da-pagina {
         width: 100vw;
-        height: 100vh;
+        height: 100vw;
     }
 
     #barra-de-cima {
+        min-width: 50vh;
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../imagens/fundo.jpg');
         background-position: center center;
         background-repeat: no-repeat;
@@ -100,14 +101,14 @@
     #home h1 {
         margin-top: .5em;
         padding-bottom: .3em;
-        font-size: 3em;
+        font-size: 2em;
         color: var(--cor-de-destaque);
     }
     
     #home h2 {
         margin-bottom: .5em;
         padding-left: 10px;
-        font-size: 2.5em;
+        font-size: 1.5em;
         color: #1ea004;
     }
     
@@ -118,7 +119,7 @@
         border-radius: 20px;
         margin-left: -10px;
         background-color: #178002;
-        font-size: 2em;
+        font-size: 1em;
         color: #e7f0e4;
     }
     
@@ -176,7 +177,7 @@
     
     #sobre-mim {
         margin-top: 3em;
-        width: 100vw;
+        width: 80vw;
         padding-left: 20px;
         font-size: 2em;
         color: var(--borda);
@@ -185,9 +186,8 @@
     #sobre-mim h2 {
         display: block;
         text-align: center;
-        margin-bottom: -1.5em;
         margin-top: 1em;
-        font-size: 1.5em;
+        font-size: 1.4em;
         font-weight: 600;
         color: var(--borda);
     }
@@ -202,12 +202,13 @@
     }
     
     #sobre-mim img {
-        display: block;
+        display: none;
         width: 80px;
         height: 80px;
     }
     
     #sobre-mim a {
+        display: none;
         text-decoration: none;
         font-size: .4em;
     }
@@ -237,7 +238,7 @@
     }
     
     #imgs-container {
-        width: 60vh;
+        width: 60vw;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -247,8 +248,8 @@
     #imgs-container img {
         margin-top: 2em;
         margin-left: 30px;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
     }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -256,9 +257,22 @@
         width: 50vw;
     }
 
-    #home h2 {
-        margin-bottom: -1.5em;
+    #home h1 {
+        margin-top: .5em;
+        padding-bottom: .3em;
+        font-size: 3em;
     }
+    
+    #home h2 {
+        margin-bottom: -1.7em;
+        padding-left: 10px;
+        font-size: 2.5em;
+    }
+
+    #home h3 {
+        font-size: 2em;
+    }
+
 
     #logo-principal .logo {
         display: inline-block;
@@ -270,21 +284,22 @@
 
     #sobre-mim {
         margin-top: 4.5em;
-        width: 79vh;
+        width: 50vw;
         font-size: 2em;
         color: var(--borda);
     }
     
     #sobre-mim h2 {
     display: block;
-    width: 90vh;
+    width: 60vw;
+    font-size: 1.6em;
     text-align: center;
-    margin-left: 3em;
-    margin-bottom: -3.3em;
+    margin-left: 3.3em;
+    margin-bottom: -3em;
     }
 
     #sobre-mim p {
-    width: 90vh;
+    width: 70vw;
     font-size: .9em;
     margin-left: 4.3em;
     }
@@ -293,12 +308,14 @@
     display: block;
     margin-top: 2em;
     margin-left: 4em;
+    padding-bottom: 10px;
     width: 120px;
     height: 120px;
     }
 
     #sobre-mim a {
-    margin-left: 10em;
+    display: block;
+    margin-left: 7em;
     font-size: .4em;
     }
 
@@ -309,13 +326,13 @@
 
     #habilidades {
         margin-top: 4.5em;
-        width: 90vh;
+        width: 90vw;
         margin-left: 20px;
         margin-bottom: 4.5em;
     }
     
     #habilidades h2 {
-        width: 90vw;
+        width: 70vw;
         font-size: 2.8em;
         padding-left: 2.7em;
     }
@@ -360,23 +377,36 @@
         margin-left: 50em;
     }
 
+    #home h1 {
+        margin-top: .5em;
+        padding-bottom: .3em;
+        font-size: 3em;
+    }
+    
     #home h2 {
-        margin-bottom: -1.5em;
+        margin-bottom: -1.7em;
+        padding-left: 10px;
+        font-size: 2.5em;
+    }
+
+    #home h3 {
+        font-size: 2em;
     }
 
     #sobre-mim {
         margin-top: 4.5em;
-        width: 90vh;
+        width: 70vw;
         font-size: 2em;
         color: var(--borda-da-img);
     }
     
     #sobre-mim h2 {
     display: block;
-    width: 90vh;
+    width: 60vw;
     text-align: center;
+    font-size: 1.6em;
     margin-left: 3em;
-    margin-bottom: -3.3em;
+    margin-bottom: -3em;
     }
 
     #sobre-mim p {
@@ -391,9 +421,11 @@
     margin-left: 4em;
     width: 120px;
     height: 120px;
+    padding-bottom: 10px;
     }
 
     #sobre-mim a {
+    display: block;
     margin-left: 10em;
     font-size: .4em;
     }
@@ -405,7 +437,7 @@
     
     #habilidades {
         margin-top: 4.5em;
-        width: 90vh;
+        width: 90vw;
         margin-left: 20px;
         margin-bottom: 4.5em;
     }
@@ -466,25 +498,37 @@
         border-radius: 50%;
         margin-left: 60em;
     }
-
-    #home h2 {
-        margin-bottom: -1.5em;
-    }
-
     
     #sobre-mim {
         margin-top: 4.5em;
-        width: 90vh;
+        width: 90vw;
         font-size: 2em;
         color: var(--borda);
     }
     
+    #home h1 {
+        margin-top: .5em;
+        padding-bottom: .3em;
+        font-size: 3em;
+    }
+    
+    #home h2 {
+        margin-bottom: -1.7em;
+        padding-left: 10px;
+        font-size: 2.5em;
+    }
+
+    #home h3 {
+        font-size: 2em;
+    }
+
     #sobre-mim h2 {
     display: block;
-    width: 90vh;
+    width: 60vw;
+    font-size: 1.6em;
     text-align: center;
-    margin-left: 3em;
-    margin-bottom: -3.3em;
+    margin-left: 1em;
+    margin-bottom: -3em;
     }
 
     #sobre-mim p {
@@ -499,9 +543,11 @@
     margin-left: 4em;
     width: 120px;
     height: 120px;
+    padding-bottom: 10px;
     }
 
     #sobre-mim a {
+    display: block;
     margin-left: 10em;
     font-size: .4em;
     }
@@ -510,11 +556,10 @@
     text-decoration: underline;
     color: var(--cor-de-destaque);
     }
-
     
     #habilidades {
         margin-top: 4.5em;
-        width: 90vh;
+        width: 90vw;
         margin-left: 20px;
         margin-bottom: 1.5em;
     }
