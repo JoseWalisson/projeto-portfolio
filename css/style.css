@@ -17,6 +17,10 @@
         --cor-gradient: #1dcf1d6b;
     }
     
+    body {
+        overflow-x: hidden;
+    }
+
     #container-da-pagina {
         width: 100vw;
         height: 100vw;
@@ -248,11 +252,47 @@
     #imgs-container img {
         margin-top: 2em;
         margin-left: 30px;
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
+    }
+
+    #projetos {
+        width: 90vw;
+        margin: 20px;
+    }
+
+    #projetos h2 {
+        color: #c50808;
+        font-size: 2.5em;
+        padding-bottom: .3em;
+    }
+
+    #projetos p {
+        font-size: 1.3em;
+        padding-bottom: .5em;
+    }
+
+    #container-projetos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .em-breve {
+        margin-top: 20px;
+        text-align: center;
+        width: 15vw;
+        height: 15vw;
+        background-color: #c5c2c2;
     }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     #container li a {
         width: 50vw;
     }
@@ -342,9 +382,19 @@
         padding-left: 4.6em;
         font-size: 1.7em;
     }
+
+    #imgs-container img {
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
     #container {
         display: flex;
         flex-direction: row;
@@ -454,9 +504,17 @@
         font-size: 1.7em;
     }
 
+    #imgs-container img {
+        width: 70px;
+        height: 70px;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
+    body {
+        overflow-x: hidden;
+    }
 
     #container {
         display: flex;
@@ -524,15 +582,15 @@
 
     #sobre-mim h2 {
     display: block;
-    width: 60vw;
+    width: 60vh;
     font-size: 1.6em;
     text-align: center;
-    margin-left: 1em;
+    margin-left: 5em;
     margin-bottom: -3em;
     }
 
     #sobre-mim p {
-    width: 70vw;
+    width: 60vw;
     font-size: .9em;
     margin-left: 4.3em;
     }
@@ -571,9 +629,14 @@
     }
     
     #habilidades p {
-        width: 80vw;
+        width: 70vw;
         padding-left: 3.8em;
         font-size: 2em;
+    }
+
+    #imgs-container img {
+        width: 70px;
+        height: 70px;
     }
 
 }
