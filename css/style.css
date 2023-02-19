@@ -46,7 +46,7 @@
     #container li {
         list-style-type: none;
     }
-    
+
     #container img {
         display: block;
         width: 60px;
@@ -65,7 +65,7 @@
     #container li {
         margin: 1em;
     }
-    #container li a {
+    #container li .efeito {
         text-align: center;
         display: block;
         color: var(--cor-da-lista);
@@ -78,7 +78,7 @@
         transition: .5s;
     }
     
-    #container li a:hover {
+    #container li .efeito:hover {
         border-radius: 20px;
         background-color: var(--cor-do-background);
     }
