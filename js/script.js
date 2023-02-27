@@ -1,6 +1,6 @@
-let menuItems = document.querySelectorAll('#container li a');
+let menuItens = document.querySelectorAll('#container li a');
 
-menuItems.forEach(function (menuItem) {
+menuItens.forEach(function (menuItem) {
   menuItem.addEventListener('click', function (event) {
     event.preventDefault();
 
