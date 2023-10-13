@@ -673,7 +673,7 @@
         flex-direction: column;
         padding-top: 20px;
         width: 30vw;
-        height: 26vw;
+        height: 31vw;
         background-color: #c9c9c9;
         margin-bottom: 20px;
     }
@@ -878,8 +878,8 @@
         align-items: center;
         flex-direction: column;
         padding-top: 20px;
-        width: 25vw;
-        height: 31vw;
+        width: 400px;
+        height: 350px;
         background-color: #c9c9c9;
         margin-bottom: 20px;
     }
@@ -891,15 +891,14 @@
         font-size: 1.3em;
         margin-top: 20px;
         text-align: center;
-        width: 15vw;
-        height: 15vw;
+        width: 350px;
+        height: 200px;
     }
 
     .conteudo .link-projeto {
-        /* padding-top: 20px; */
         font-size: 3em;
-        width: 25vw;
-        height: 10vw;
+        width: 400px;
+        height: 350px;
     }
 
     #projetos {
